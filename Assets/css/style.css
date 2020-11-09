@@ -24,6 +24,16 @@ body {
 img {
   max-width: 100%;
 }
+.init-nav {
+  display: flex;
+  width: auto;
+  list-style: none;
+}
+.nav-item {
+  color: #797371;
+  font-size: 18px;
+  text-decoration: none;
+}
 .cart-links {
   display: flex;
   width: auto;
