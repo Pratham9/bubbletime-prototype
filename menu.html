@@ -12,7 +12,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <!-- CSS -->
@@ -27,13 +27,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <title>slider Home Page</title>
+    <title>Bubble Time Tea & Waffles</title>
   </head>
 
   <body>
     <!--NavBar-->
     <header>
-      <div class="top-header shadow p-3 mb-5 bg-white rounded">
+      <div class="top-header shadow-sm p-3 mb-5 bg-white rounded">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
@@ -68,7 +68,7 @@
                           <a class="nav-link" href="#">Menu</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">About Us</a>
+                          <a class="nav-link" href="#">Our Story</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Contact</a>
@@ -107,15 +107,85 @@
       </div>
     </header>
     <section>
-        <div class="row">
-            <div class="container">
-                <div class="sector-menu">
-                    <div class="col-md-12">
-                        
-                    </div>
-                </div>
-            </div>
+      <div class="row container-fluid">
+        <div class="sector-menu col-md-5">
+          <div class="section-top">
+            <li class="section-top-item">
+              <a href="drink.ajax" class="section-top-link">Drinks</a>
+            </li>
+            <li class="section-top-item">
+              <a href="waffles.ajax" class="section-top-link">Waffles</a>
+            </li>
+            <li class="section-top-item">
+              <a href="merch.ajax" class="section-top-link">Merch</a>
+            </li>
+          </div>
         </div>
+      </div>
+      <div class="row container-fluid">
+        <div class="section-menu-main">
+          <div class="col-md-2">
+            <div class="drinks-type-section">
+              <li>
+                <a href="">Milk Tea</a>
+              </li>
+              <li>
+                <a href="hot">Smoothies</a>
+              </li>
+              <li>
+                <a href="hot">Hot Drinks</a>
+              </li>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="drinks-main-grid">
+              <div class="drink-item">
+                <img
+                  id="GreenTeaHome"
+                  src="Assets\Images\GreenTeaHome.png"
+                  alt="GreenTeaHome"
+                />
+              </div>
+            </div>
+            <div class="drink-item-active">
+              <div class="blanket"></div>
+              <div class="content-selected">
+                <div class="col-md-10">
+                  <div class="col-md-4">
+                    <img
+                      id="GreenTeaHomeXL"
+                      src="Assets\Images\GreenTeaHome.png"
+                      alt="GreenTeaHome"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="drink-name-wrapper">
+                      <h4">Green Tea</h4>
+                    </div>
+                    <div class="size-selection">
+                        <div class="regular-wrapper">R</div>
+                        <div class="large-wrapper">L</div>
+                    </div>
+                  </div>
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
+<script>
+  $("#drink-item").click(activateMenuItem());
+
+  function activateMenuItem() {
+    $(".blanket").css("display", "block");
+    $(".drink-item-dea").css("display", "block");
+  }
+  function deactivateMenuItem() {
+    $(".blanket").css("display", "none");
+    $(".drink-item-active").css("display", "none");
+  }
+</script>
