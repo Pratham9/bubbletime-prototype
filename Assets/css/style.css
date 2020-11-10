@@ -47,6 +47,7 @@ img {
   margin: 10px;
   padding-left: 20px;
 }
+
 a {
   color: #797371;
   font-size: 18px;
@@ -80,8 +81,6 @@ ul {
   background-color: #f6a947;
 }
 
-
-
 /*--------------------------------------------------------------
 # our_story
 --------------------------------------------------------------*/
@@ -104,7 +103,7 @@ ul {
 
 .about .about-img {
   position: relative;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .about .about-img img {
@@ -120,10 +119,10 @@ ul {
   width: 60px;
   height: 60px;
   z-index: 1;
-  content: '';
+  content: "";
   border-left: 5px solid #cda45e;
   border-top: 5px solid #cda45e;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .about .about-img::after {
@@ -133,10 +132,10 @@ ul {
   width: 60px;
   height: 60px;
   z-index: 2;
-  content: '';
+  content: "";
   border-right: 5px solid #cda45e;
   border-bottom: 5px solid #cda45e;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .about .about-img:hover {
