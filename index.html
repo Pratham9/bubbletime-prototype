@@ -98,8 +98,9 @@
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                           </li>
-                          <li class="cart-link"><a href="http://cs.tru.ca/~avermaf20/BT/mycontroller.php">Login/Signup</a></li>
-                        </div>
+                          <li class="cart-link"><button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#tr6-modal">Login/SignUp</button>
+                          </li> 
+                          </div>
                       </div>
                     </li>
                   </ul>
@@ -110,6 +111,103 @@
         </div>
       </div>
     </header>
+
+    <div class='modal fade' id='tr6-modal' role='dialog' tabindex="-1">
+      <div class='modal-dialog'role='document' >
+          <div class='modal-content'>
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Welcome Back!</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <img src="Assets/Images/greenBG.jpg" alt="bubbletea">
+                  </div>
+                  <div class="col-lg-7">
+                    <form method="post" >
+                      <div class="form-row">
+                        <div class="col-sm-7">
+                          <i class="fa fa-user prefix grey-text"></i>
+                          <input type="username" placeholder="Enter Username" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-sm-7">
+                          <i class="fa fa-lock prefix grey-text"></i>
+                          <input type="password" placeholder="Enter Password" class="form-control">
+                        </div>
+                      </div>
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary btn-rounded mb-4">Login</button>
+                        <a href="#">Forgot Password.</a>
+                      <p>
+                        Don't have an account?<a href="#"  data-toggle="modal" data-target="#tr7-modal">Register here</a>                        
+                      </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                </div>
+              </div>            
+          </div>  
+      </div>    
+  </div>
+  
+  <div class='modal fade' id='tr7-modal' role='dialog' tabindex="-1">
+    <div class='modal-dialog'role='document' >
+        <div class='modal-content'>
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Welcome Back!</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img src="Assets/Images/sugarpearllattee.jpg" alt="bubbletea">
+                </div>
+                <div class="col-lg-7">
+                  <form method="post" >
+                    <div class="form-row">
+                      <div class="col-sm-7">
+                        <i class="fa fa-user prefix grey-text"></i>
+                        <input type="text" placeholder="Enter Username" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-sm-7">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" placeholder="Enter Email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-sm-7">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" placeholder="Enter Password" class="form-control">
+                      </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary btn-rounded mb-4">Login</button>
+                      
+                    <p>
+                      Already Registered?<a href="#"  data-toggle="modal" data-target="#tr6-modal">Login here</a>                        
+                    </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              </div>
+            </div>            
+        </div>  
+    </div>    
+</div>  
+  
 
 <!--Image_Slider-->
 
