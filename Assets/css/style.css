@@ -90,22 +90,22 @@ ul {
 # our_story
 --------------------------------------------------------------*/
 .about {
-  background: url("ImagesDownloaded/3onTable.jpg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
 }
 
-/*.about:before {
+.about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: #f6a53d;
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
-}*/
+}
 
+  
 .about .about-img {
   position: relative;
   transition: 0.5s;
@@ -273,6 +273,7 @@ ul {
 
 
 /*-------------------------contact us---------------*/
+/*---------------------------------------------------*/
 .box1 img,.box1:after,.box1:before{width:100%;transition:all .3s ease 0s}
 .box1 .icon,.box2,.box3,.box4,.box5 .icon li a{text-align:center}
 .box10:after,.box10:before,.box1:after,.box1:before,.box2 .inner-content:after,.box3:after,.box3:before,.box4:before,.box5:after,.box5:before,.box6:after,.box7:after,.box7:before{content:""}
