@@ -27,13 +27,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <title>About Us</title>
+    <title>Contact</title>
   </head>
 
   <body>
     <!--NavBar-->
     <header>
-      <div class="top-header">
+      <div class="top-header shadow-sm p-3 mb-5 bg-white rounded">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
@@ -62,34 +62,41 @@
                   id="navbarSupportedContent"
                 >
                   <ul class="navbar-nav mr-auto justu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about_us.html">Our Story</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact_us.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="menu.html">Menu</a>
-                    </li>
+                    <div class="col-md-6">
+                      <div class="init-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="about_us.html">Our Story</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact_us.html">Contact</a>
+                        </li>
+                      </div>
+                    </div>
                     <li>
-                      <div class="cart-links">
-                        <li class="cart-link">
-                          <i class="fa fa-search" aria-hidden="true"></i>
-                        </li>
-                        <li class="cart-link">
-                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </li>
-                        <li class="cart-link">|</li>
-                        <li class="cart-link">
-                          <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </li>
-                        <li class="cart-link">
-                          <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </li>
-                        <li class="cart-link">Login/Signp</li>
+                      <div class="col-md-3">
+                        <div class="cart-links">
+                          <li class="cart-link">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </li>
+                          <li class="cart-link">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                          </li>
+                          <li class="cart-link">|</li>
+                          <li class="cart-link">
+                            <a href="https://www.instagram.com/bubbletimetea/?hl=en">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="cart-link">
+                            <a href="https://www.facebook.com/bubbletimetea/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="cart-link"><a href="http://cs.tru.ca/~avermaf20/BT/mycontroller.php">Login/Signup</a></li>
+                        </div>
                       </div>
                     </li>
                   </ul>
@@ -100,14 +107,159 @@
         </div>
       </div>
     </header>
+    <hr>
+    <h3 class="text-center">Contact Details</h3>
+    <hr>
+
+    <div class="container">
+      <div class="row mt-40">
+          <div class="col-md-4 col-sm-6">
+              <div class="box1">
+                  <img src="Assets/Images/phone.jpg" alt="phone">
+                  <h3 class="title"><a href="tel:7784716688">Phone</a></h3>
+                  <ul class="icon">
+                      <li><a href="tel:7784716688"><i class="fa fa-phone"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="box1">
+                  <img src="Assets/Images/email.jpg" alt="email">
+                  <h3 class="title"><a href="mailto: my.bubbletimetea@gmail.com">Email</a></h3>
+                  <ul class="icon">
+                      <li><a href="mailto: my.bubbletimetea@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="box1">
+                  <img src="Assets/Images/enquiry.jpg" alt="Enquiry">
+                  <h3 class="title"><a href="" data-toggle="modal" data-target="#EnquiryForm">Enquiry</a></h3>
+                  <ul class="icon">
+                      <li><a href="" data-toggle="modal" data-target="#EnquiryForm"><i class="fa fa-question-circle"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-------------------------ENQUIRY FORM------------------------------------------------------------------------>
+  <div class="modal fade" id="EnquiryForm" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title font-weight-bold">We are here to answer.</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fa fa-user prefix grey-text"></i>
+          <input type="text" id="form34" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form34">Your name</label>
+        </div>
+
+        <div class="md-form mb-5">
+          <i class="fa fa-envelope prefix grey-text"></i>
+          <input type="email" id="form29" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form29">Your email</label>
+        </div>
+
+        <div class="md-form mb-5">
+          <i class="fa fa-tag prefix grey-text"></i>
+          <input type="text" id="form32" class="form-control validate">
+          <label data-error="wrong" data-success="right" for="form32">Subject</label>
+        </div>
+
+        <div class="md-form">
+          <i class="fa fa-pencil prefix grey-text"></i>
+          <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+          <label data-error="wrong" data-success="right" for="form8">Your message</label>
+        </div>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+  <br>
+  <br>
+
+  <hr>
+  <h3 class="text-center">Store Hours</h3>
+  <hr>
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper">Come On In</span>
+              <span class="section-heading-lower">We're Open</span>
+            </h2>
+            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Sunday
+                <span class="ml-auto">12:00 PM to 7:30 PM</span>
+              </li>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Monday
+                <span class="ml-auto">12:00 PM to 7:30 PM</span>
+              </li>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Tuesday
+                <span class="ml-auto">12:00 PM to 7:30 PM</span>
+              </li>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Wednesday
+                <span class="ml-auto">12:00 PM to 7:30 PM</span>
+              </li>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Thursday
+                <span class="ml-auto">12:00 PM to 7:30 PM</span>
+              </li>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Friday 
+                <span class="ml-auto">12:00 PM to 8:30 PM</span>
+              </li>
+              <li class="list-unstyled-item list-hours-item d-flex">
+                Saturday
+                <span class="ml-auto">12:00 PM to 8:30 PM</span>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <hr>
+  
 
 
 <!--MAP LOCATION-->
 <div data-aos="fade-up">
-` <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20230.442713730492!2d-120.37729956044923!3d50.667874700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2dcfe52907b5%3A0xb04cec64927d903e!2sBubble%20Time%20Tea%20%26%20Waffles!5e0!3m2!1sen!2sca!4v1604900079635!5m2!1sen!2sca" frameborder="2" allowfullscreen></iframe>
+  <h3 class="text-center">Our Location</h3>
+  <hr>
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.805340320158!2d-120.36197878426071!3d50.66787467950602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2dcfe52907b5%3A0xb04cec64927d903e!2sBubble%20Time%20Tea%20%26%20Waffles!5e0!3m2!1sen!2sca!4v1604999884965!5m2!1sen!2sca" width="100%" height="350px" frameborder="2" style="border: 1;;" allowfullscreen="" tabindex="0"></iframe>
 </div>
 
-    
+
+   
 
 
   </body>

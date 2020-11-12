@@ -33,9 +33,10 @@
   </head>
 
   <body>
-    <!--NavBar-->
+
+<!--NavBar-->
     <header>
-      <div class="top-header shadow p-3 mb-5 bg-white rounded">
+      <div class="top-header shadow-sm p-3 mb-5 bg-white rounded">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
@@ -97,8 +98,9 @@
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                           </li>
-                          <li class="cart-link"><a href="http://cs.tru.ca/~avermaf20/BT/mycontroller.php">Login/Signup</a></li>
-                        </div>
+                          <li class="cart-link"><button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#tr6-modal">Login/SignUp</button>
+                          </li> 
+                          </div>
                       </div>
                     </li>
                   </ul>
@@ -109,8 +111,105 @@
         </div>
       </div>
     </header>
-<a id="about"></a>
-    <!--Image_Slider-->
+
+    <div class='modal fade' id='tr6-modal' role='dialog' tabindex="-1">
+      <div class='modal-dialog'role='document' >
+          <div class='modal-content'>
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Welcome Back!</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <img src="Assets/Images/greenBG.jpg" alt="bubbletea">
+                  </div>
+                  <div class="col-lg-7">
+                    <form method="post" >
+                      <div class="form-row">
+                        <div class="col-sm-7">
+                          <i class="fa fa-user prefix grey-text"></i>
+                          <input type="username" placeholder="Enter Username" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-sm-7">
+                          <i class="fa fa-lock prefix grey-text"></i>
+                          <input type="password" placeholder="Enter Password" class="form-control">
+                        </div>
+                      </div>
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary btn-rounded mb-4">Login</button>
+                        <a href="#">Forgot Password.</a>
+                      <p>
+                        Don't have an account?<a href="#"  data-toggle="modal" data-target="#tr7-modal">Register here</a>                        
+                      </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                </div>
+              </div>            
+          </div>  
+      </div>    
+  </div>
+  
+  <div class='modal fade' id='tr7-modal' role='dialog' tabindex="-1">
+    <div class='modal-dialog'role='document' >
+        <div class='modal-content'>
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Welcome Back!</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+            <div class="modal-body">
+              <div class="container">
+              <div class="row">
+                <div class="col-lg-5">
+                  <img src="Assets/Images/sugarpearllattee.jpg" alt="bubbletea">
+                </div>
+                <div class="col-lg-7">
+                  <form method="post" >
+                    <div class="form-row">
+                      <div class="col-sm-7">
+                        <i class="fa fa-user prefix grey-text"></i>
+                        <input type="text" placeholder="Enter Username" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-sm-7">
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" placeholder="Enter Email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-sm-7">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" placeholder="Enter Password" class="form-control">
+                      </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-primary btn-rounded mb-4">Login</button>
+                      
+                    <p>
+                      Already Registered?<a href="#"  data-toggle="modal" data-target="#tr6-modal">Login here</a>                        
+                    </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              </div>
+            </div>            
+        </div>  
+    </div>    
+</div>  
+  
+
+<!--Image_Slider-->
 
     <div class="container" style="border-radius: 8px;
     background: #ffffff;
@@ -120,9 +219,9 @@
         <div class="col-md-6 my-auto">
           <div class="media-content px-3 align-self-center mbr-white py-2">
             <p class="mbr-author-name pt-4 mb-2 mbr-fonts-style display-4" >
-              <b style="font-size: 68px; color: #F6A843;"><i> It's Bubble Time! </i></b>
+              <i style="font-size: 68px; color: #F6A843;"> What time is it? </i>
             </p>
-                                  <!--ADD BUTTON HERE linking to MENU PAGE-->
+            <button type="button" class="btn btn-primary btn-sm">It's Bubble Time</button>
         </div>
         </div>
         <div class="col-md-6">
@@ -132,18 +231,26 @@
               <li data-target="#demo" data-slide-to="0" class="active"></li>
               <li data-target="#demo" data-slide-to="1"></li>
               <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
             </ul>
 
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="Assets\Images\Slider1.jpg" />
+                <img src="Assets\Images\Slider1.jpg">
               </div>
               <div class="carousel-item">
-                <img src="Assets\Images\Slider2.jpg" />
+                <img src="Assets\Images\Slider2.jpg">
               </div>
               <div class="carousel-item">
-                <img src="Assets\Images\Slider3.jpg" />
+                <img src="Assets\Images\Slider3.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets\Images\Slider4.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets\Images\Slider5.jpg">
               </div>
             </div>
 
@@ -159,17 +266,103 @@
       </div>
     </div>
 
-    <br />
-    <!--Our Story-->
 
-    <!--Social Media Integration-->
+    <br>
+    <br>
+    <br>
+
+
+    <!--Celebrate with us-->
+    <section id="events" class="events">
+      <h2 class="text-center"> Let's Celebrate</h2>
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="50">
+          <div class="col-lg-12 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+            </ul>
+            <!--slides-->
+            <div class="carousel-inner" style="width: 70%; height: 90%;">
+              <div class="carousel-item active">
+                <img src="Assets\Images\celebrate4.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets\Images\celebrate3.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets\Images\celebrate2.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets\Images\celebrate1.jpg">
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </section><!-- End Events Section -->
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<!------------Social Media Integration--------------->
+    <div class="container-fluid">
+      <h3>Check Out Our Feature Drinks!</h3>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-88da779b-859f-48f1-b8ee-13ac5ff4c352"></div>
+    </div>
+<!--------------------------------------------->
+
     <section id="about" class="about">
-      <div class="container-fluid">
-        <h3>Check Out Our Feature Drinks!</h3>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-88da779b-859f-48f1-b8ee-13ac5ff4c352"></div>
+      <div class="container" data-aos="fade-up">
+    
+        <div class="row">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <div class="text-center">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="font-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="Assets/Images/drink-LABELLED.jpg" alt="labeled_drink">
+            </div>
+          </div>
+        </div>
+    
       </div>
     </section>
+
+    
+
+    
 
 <footer>
   
