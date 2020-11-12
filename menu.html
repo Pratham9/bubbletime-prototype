@@ -75,29 +75,31 @@
                         </li>
                       </div>
                     </div>
-                    <li>
-                      <div class="col-md-3">
-                        <div class="cart-links">
-                          <li class="cart-link">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                          </li>
-                          <li class="cart-link">
-                            <i
-                              class="fa fa-shopping-cart"
-                              aria-hidden="true"
-                            ></i>
-                          </li>
-                          <li class="cart-link">|</li>
-                          <li class="cart-link">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                          </li>
-                          <li class="cart-link">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                          </li>
-                          <li class="cart-link">Login/Signp</li>
+                    <div class="cart-links-wrapper">
+                      <li>
+                        <div class="col-md-3">
+                          <div class="cart-links">
+                            <li class="cart-link">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                            </li>
+                            <li class="cart-link">
+                              <i
+                                class="fa fa-shopping-cart"
+                                aria-hidden="true"
+                              ></i>
+                            </li>
+                            <li class="cart-link">|</li>
+                            <li class="cart-link">
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </li>
+                            <li class="cart-link">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </li>
+                            <li class="cart-link">Login</li>
+                          </div>
                         </div>
-                      </div>
-                    </li>
+                      </li>
+                    </div>
                   </ul>
                 </div>
               </nav>
@@ -138,7 +140,28 @@
             </div>
           </div>
           <div class="col-md-10">
-            <div class="drinks-main-grid">
+            <div class="grid-container">
+              <div class="drink-item">
+                <img
+                  id="GreenTeaHome"
+                  src="Assets\Images\GreenTeaHome.png"
+                  alt="GreenTeaHome"
+                />
+              </div>
+              <div class="drink-item">
+                <img
+                  id="GreenTeaHome"
+                  src="Assets\Images\GreenTeaHome.png"
+                  alt="GreenTeaHome"
+                />
+              </div>
+              <div class="drink-item">
+                <img
+                  id="GreenTeaHome"
+                  src="Assets\Images\GreenTeaHome.png"
+                  alt="GreenTeaHome"
+                />
+              </div>
               <div class="drink-item">
                 <img
                   id="GreenTeaHome"
@@ -147,26 +170,42 @@
                 />
               </div>
             </div>
-            <div class="drink-item-active">
+            <div class="drink-window">
               <div class="blanket"></div>
-              <div class="content-selected">
-                <div class="col-md-10">
-                  <div class="col-md-4">
-                    <img
-                      id="GreenTeaHomeXL"
-                      src="Assets\Images\GreenTeaHome.png"
-                      alt="GreenTeaHome"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <div class="drink-name-wrapper">
-                      <h4">Green Tea</h4>
+
+              <div class="selected-drink row">
+                <div class="col-md-5 image-modal">
+                  <img
+                    id="GreenTeaHomeXL"
+                    src="Assets\Images\GreenTeaHome.png"
+                    alt="GreenTeaHome"
+                  />
+                </div>
+                <div class="col-md-5 text-modal">
+                  <div class="side-menu">
+                    <div class="item-title-wrapper">
+                      <h4>Green Tea</h4>
+                    </div>
+                    <div class="description-text"><p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+        </p><br>
                     </div>
                     <div class="size-selection">
-                        <div class="regular-wrapper">R</div>
-                        <div class="large-wrapper">L</div>
+                      <div class="regular-wrapper">Regular</div>
+                      <div class="large-wrapper">Large</div>
                     </div>
+                    <div class="topping-selection">
+                      <li><div class="topping-item">A</div></li>
+                      <li><div class="topping-item">B</div></li>
+                      <li><div class="topping-item">C</div></li>
+                      <li><div class="topping-item">D</div></li>
+                                          </div>
+                                          <br><br><br>
+                    <div class="price-block"><h3>$3</h3></div>
                   </div>
+                </div>
+                <div class="close-modal-wrapper">
                   <i class="fas fa-times"></i>
                 </div>
               </div>
@@ -178,14 +217,15 @@
   </body>
 </html>
 <script>
-  $("#drink-item").click(activateMenuItem());
+  $(".drink-item").click(activateMenuItem);
+  $(".close-modal-wrapper").click(deactivateMenuItem);
 
   function activateMenuItem() {
-    $(".blanket").css("display", "block");
-    $(".drink-item-dea").css("display", "block");
+    console.log("ok");
+    $(".drink-window").css("display", "flex");
   }
   function deactivateMenuItem() {
-    $(".blanket").css("display", "none");
-    $(".drink-item-active").css("display", "none");
+    console.log("lol");
+    $(".drink-window").css("display", "none");
   }
 </script>

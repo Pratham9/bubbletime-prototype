@@ -51,6 +51,9 @@ li {
   float: right;
   padding-top: 35px;
 }
+.cart-links-wrapper {
+  display: flex;
+}
 .cart-link {
   float: right;
   margin: 10px;
@@ -75,9 +78,7 @@ ul {
   display: inline-block;
   position: relative;
 }
-.navbar-toggler {
-  color: #797371;
-}
+
 .init-nav li:active {
   border-radius: 15px;
   background-color: #f6a947;
@@ -240,33 +241,95 @@ ul {
   background: #ffffff;
   box-shadow: 20px 20px 50px #d9d9d9, -20px -20px 50px #ffffff;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 50px;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+}
 #GreenTeaHome {
   position: relative;
   height: 327px;
   width: 203px;
 }
-.drink-item-deactive {
-  display: none;
-}
-.drink-item-active {
-  display: none;
-}
+
 .blanket {
-  display:none;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   backdrop-filter: blur(5px);
+  z-index: inherit;
+}
+.drink-window {
+  display: none;
+  z-index: 777;
+}
+.selected-drink {
+  width: 1000px;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 20px 20px 50px #d9d9d9, -20px -20px 50px #ffffff;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 888;
 }
-.content-selected{
-  z-index: 999;
-  position: absolute; top: 50px; left: calc(50%-315px);
+.image-modal img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 75vh;
 }
-#GreenTeaHomeXL {
-  position: relative;
-  height: 615px;
-  width: 395px;
+.text-modal {
+  padding: 30px 30px;
+}
+.side-menu {
+  align-items: center;
+}
+.item-title-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.size-selection {
+  width: 250px;
+  margin-top: 50px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #87bf3e;
+  border-radius: 15px;
+  padding: 3px;
+}
+.regular-wrapper,
+.large-wrapper {
+  text-align: center;
+}
+.topping-selection {
+  margin-top: 30px;
+  display: flex;
+}
+.topping-selection li {
+  text-align: center;
+  list-style: none;
+}
+.topping-item {
+  border: #797371 solid;
+  height: 50px;
+  width: 50px;
+}
+.close-modal-wrapper {
+  position: absolute;
+  padding: 20px 40px 40px 20px;
+  border: #797371 solid;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
 }
