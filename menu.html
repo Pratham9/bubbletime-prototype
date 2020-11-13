@@ -10,11 +10,6 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poiret+One"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="Assets/css/style.css" />
 
@@ -23,9 +18,16 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cec13048b2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Bubble Time Tea & Waffles</title>
   </head>
@@ -75,30 +77,6 @@
                         </li>
                       </div>
                     </div>
-<<<<<<< HEAD
-                    <div class="cart-links-wrapper">
-                      <li>
-                        <div class="col-md-3">
-                          <div class="cart-links">
-                            <li class="cart-link">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </li>
-                            <li class="cart-link">
-                              <i
-                                class="fa fa-shopping-cart"
-                                aria-hidden="true"
-                              ></i>
-                            </li>
-                            <li class="cart-link">|</li>
-                            <li class="cart-link">
-                              <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </li>
-                            <li class="cart-link">
-                              <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </li>
-                            <li class="cart-link">Login</li>
-                          </div>
-=======
                     <li>
                       <div class="col-md-3">
                         <div class="cart-links">
@@ -106,24 +84,33 @@
                             <i class="fa fa-search" aria-hidden="true"></i>
                           </li>
                           <li class="cart-link">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <i
+                              class="fa fa-shopping-cart"
+                              aria-hidden="true"
+                            ></i>
                           </li>
                           <li class="cart-link">|</li>
                           <li class="cart-link">
-                            <a href="https://www.instagram.com/bubbletimetea/?hl=en">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <a
+                              href="https://www.instagram.com/bubbletimetea/?hl=en"
+                            >
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
                           </li>
                           <li class="cart-link">
                             <a href="https://www.facebook.com/bubbletimetea/">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
                             </a>
                           </li>
-                          <li class="cart-link"><a href="http://cs.tru.ca/~avermaf20/BT/mycontroller.php">Login/Signup</a></li>
->>>>>>> 3d39c2c026a67540f3de8cca598a37c525bfcf4a
+                          <li class="cart-link">
+                            <a
+                              href="http://cs.tru.ca/~avermaf20/BT/mycontroller.php"
+                              >Login/Signup</a
+                            >
+                          </li>
                         </div>
-                      </li>
-                    </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </nav>
@@ -210,23 +197,45 @@
                     <div class="item-title-wrapper">
                       <h4>Green Tea</h4>
                     </div>
-                    <div class="description-text"><p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p><br>
+                    <div class="description-text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                      <br />
                     </div>
                     <div class="size-selection">
-                      <div class="regular-wrapper">Regular</div>
-                      <div class="large-wrapper">Large</div>
+                      <div class="regular-wrapper">
+                        <div class="wave-flow"><span>Regular</span></div>
+                      </div>
+                      <div class="large-wrapper">
+                        <div class="wave-flow"></div>
+                        <span>Large</span>
+                      </div>
                     </div>
                     <div class="topping-selection">
                       <li><div class="topping-item">A</div></li>
                       <li><div class="topping-item">B</div></li>
                       <li><div class="topping-item">C</div></li>
                       <li><div class="topping-item">D</div></li>
-                                          </div>
-                                          <br><br><br>
-                    <div class="price-block"><h3>$3</h3></div>
+                    </div>
+                    <br /><br /><br />
+                    <div class="price-block" style="display: flex">
+                      <h3>$3</h3>
+                      <!-- <button class="cart-btn">
+                        <span class="add-to-cart">Add to cart</span>
+                        <span class="added">Added</span>
+                        <i class="far fa-circle"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                      </button> -->
+                      <button class="cart-button">
+                        <span class="add-to-cart">Add to cart</span>
+                        <span class="added">Added</span>
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="far fa-circle"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="close-modal-wrapper">
@@ -245,11 +254,19 @@
   $(".close-modal-wrapper").click(deactivateMenuItem);
 
   function activateMenuItem() {
-    console.log("ok");
     $(".drink-window").css("display", "flex");
   }
   function deactivateMenuItem() {
-    console.log("lol");
     $(".drink-window").css("display", "none");
+  }
+  const cartButtons = document.querySelectorAll(".cart-button");
+
+  cartButtons.forEach((button) => {
+    button.addEventListener("click", cartClick);
+  });
+
+  function cartClick() {
+    let button = this;
+    button.classList.add("clicked");
   }
 </script>
