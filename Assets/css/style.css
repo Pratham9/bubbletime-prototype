@@ -348,45 +348,6 @@ ul {
 .large-wrapper:hover {
   background-position: 500% 100%;
 }
-/* .regular-wrapper,
-.large-wrapper span {
-  position: relative;
-  z-index: 1;
-  transition: 3s;
-}
-
-
-.large-wrapper .wave-flow {
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #00aeff;
-  transition: 5s;
-}
-
-.large-wrapper .wave-flow::before {
-  content: "";
-  position: absolute;
-  top: calc(100% + 22px);
-  left: 0;
-  width: 100%;
-  height: 22px;
-  background: url(wave.png);
-  animation: wave-animate 0.5s linear infinite;
-}
-.large-wrapper .wave-flow:hover {
-  top: 0;
-}
-@keyframes wave-animate {
-  0% {
-    background-position-x: 0;
-    background-position-y: -22px;
-  }
-  100% {
-    background-position-x: 118px;
-  }
-} */
 .topping-selection {
   margin-top: 30px;
   display: flex;
@@ -715,13 +676,58 @@ body {
     font-size: 1.1rem;
   }
 }
-
-/***************MODAL*************************/
-.modal-dialog{
-  width: 70%;
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-title {
+  width: auto;
+}
+.close {
+  /* position: absolute;
+  padding: 20px 40px 40px 20px;
+  width: auto;
+  top: 0;
+  right: 0; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
 }
 
+.form-row-name,
+.form-row-subject,
+.form-row-message {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-row-user .fa,
+.form-row-name .fa,
+.form-row-subject .fa,
+.form-row-message .fa{
+  width: auto;
+  padding-right: 10px;
+}
 
-
-
-
+/***************MODAL*************************/
+.form-row {
+  padding: 10px;
+}
+.form-row-user,
+.form-row-password,
+.form-row-email {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.form-row .fa {
+  width: auto;
+  padding-right: 10px;
+}
