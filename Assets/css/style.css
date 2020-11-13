@@ -320,7 +320,9 @@ body{background-color:#f1f1f2}
 }
 
 /***************MODAL*************************/
-
+.modal-dialog{
+  width: 70%;
+}
 
 
 
