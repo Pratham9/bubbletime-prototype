@@ -35,7 +35,7 @@
   <body>
     <!--NavBar-->
     <header>
-      <div class="top-header shadow-sm p-3 mb-5 bg-white rounded">
+      <div class="top-header shadow-sm p-3 mb-5 rounded">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
@@ -66,7 +66,10 @@
                   <ul class="navbar-nav mr-auto justu">
                     <div class="col-md-6">
                       <div class="init-nav">
-                        <li class="nav-item">
+                        <li
+                          class="nav-item"
+                          style="border-radius: 15px; background-color: #f6a947"
+                        >
                           <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
@@ -109,7 +112,7 @@
                               data-toggle="modal"
                               data-target="#tr6-modal"
                             >
-                              Login/SignUp
+                              Login
                             </button>
                           </li>
                         </div>
@@ -193,7 +196,8 @@
                         <div class="large-wrapper">
                           <div class="wave-flow"></div>
                           <span>Large</span>
-                        </div><p>+ $1.3</p>
+                        </div>
+                        <p>+ $1.3</p>
                       </div>
                       <div class="topping-selection">
                         <li><div class="topping-item">A</div></li>
@@ -255,7 +259,8 @@
                         <div class="large-wrapper">
                           <div class="wave-flow"></div>
                           <span>Large</span>
-                        </div><p>+ $1.3</p>
+                        </div>
+                        <p>+ $1.3</p>
                       </div>
                       <div class="topping-selection">
                         <li><div class="topping-item">A</div></li>
@@ -317,7 +322,8 @@
                         <div class="large-wrapper">
                           <div class="wave-flow"></div>
                           <span>Large</span>
-                        </div><p>+ $1.3</p>
+                        </div>
+                        <p>+ $1.3</p>
                       </div>
                       <div class="topping-selection">
                         <li><div class="topping-item">A</div></li>
@@ -379,8 +385,8 @@
                         <div class="large-wrapper">
                           <div class="wave-flow"></div>
                           <span>Large</span>
-                        </div><p>+ $1.3</p>
-                        
+                        </div>
+                        <p>+ $1.3</p>
                       </div>
                       <div class="topping-selection">
                         <li><div class="topping-item">A</div></li>
@@ -442,7 +448,8 @@
                         <div class="large-wrapper">
                           <div class="wave-flow"></div>
                           <span>Large</span>
-                        </div><p>+ $1.3</p>
+                        </div>
+                        <p>+ $1.3</p>
                       </div>
                       <div class="topping-selection">
                         <li><div class="topping-item">A</div></li>
@@ -530,8 +537,6 @@
       $(this, " .selected-drink").css("display", "flex");
     });
   });
-
-  
 
   $(".close-modal-wrapper").click(function () {
     window.location.reload();

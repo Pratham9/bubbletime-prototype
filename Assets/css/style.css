@@ -17,7 +17,6 @@ body {
   font-family: "Poiret One", cursive;
   font-weight: bolder;
   background-color: #fafafa !important;
-
 }
 
 /*--------------------------------------------------------------
@@ -26,6 +25,7 @@ body {
 .top-header {
   display: flex;
   margin: auto;
+  background-color: #181a1bea;
 }
 img {
   max-width: 100%;
@@ -41,7 +41,7 @@ img {
 }
 .nav-item a,
 li {
-  color: #797371;
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
   font-weight: bolder;
@@ -61,8 +61,11 @@ li {
   margin: 10px;
   padding-left: 20px;
 }
-.bg-color {
-  background-color: #f6a947;
+.cart-link a i {
+  color: #fff;
+}
+.cart-link button {
+  color: #fff;
 }
 ul {
   padding: 0;
@@ -288,7 +291,6 @@ ul {
 }
 .image-modal.clicked {
   display: flex;
-  
 }
 .image-modal.clicked img {
   vertical-align: middle;
@@ -307,10 +309,10 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
-.item-title-wrapper h4{
+.item-title-wrapper h4 {
   font-size: 28px;
   font-weight: 700;
- color: #636363;
+  color: #636363;
 }
 
 .size-selection {
@@ -514,8 +516,6 @@ ul {
     opacity: 1;
   }
 }
-
-
 
 /*-------------------------contact us---------------*/
 /*---------------------------------------------------*/
@@ -738,7 +738,7 @@ body {
 .form-row-user .fa,
 .form-row-name .fa,
 .form-row-subject .fa,
-.form-row-message .fa{
+.form-row-message .fa {
   width: auto;
   padding-right: 10px;
 }
