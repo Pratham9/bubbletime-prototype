@@ -48,6 +48,8 @@ li {
 }
 .cart-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: auto;
   list-style: none;
   float: right;
@@ -66,8 +68,15 @@ li {
 }
 .cart-link button {
   color: #fff;
+  font-size: 18px;
+  font-weight: 500;
 }
-ul {
+.cart-link i:hover {
+  color: #f6a53d;
+}
+.cart-link button:hover {
+  color: #f6a53d;
+}ul {
   padding: 0;
   margin: 0;
 }
