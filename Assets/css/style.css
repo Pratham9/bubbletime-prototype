@@ -46,6 +46,10 @@ li {
   text-decoration: none;
   font-weight: bolder;
 }
+.nav-item a:hover,
+li:hover {
+  color: #f6a53d;
+}
 .cart-links {
   display: flex;
   justify-content: center;
@@ -750,6 +754,9 @@ body {
 .form-row-message .fa {
   width: auto;
   padding-right: 10px;
+}
+.list-unstyled-item {
+  color: #383838;
 }
 
 /***************MODAL*************************/
