@@ -15,7 +15,6 @@
 }
 body {
   font-family: "Poiret One", cursive;
-  font-weight: bolder;
   background-color: #fafafa !important;
 }
 
@@ -35,32 +34,31 @@ img {
   width: auto;
   list-style: none;
 }
-.navbar li a {
-  font-size: 24px;
-  font-weight: 400;
-}
 .nav-item a,
 li {
   color: #fff;
-  font-size: 18px;
   text-decoration: none;
-  font-weight: bolder;
 }
 .nav-item a:hover,
 li:hover {
   color: #f6a53d;
 }
 .cart-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: auto;
   list-style: none;
   float: right;
   padding-top: 35px;
 }
-.cart-links-wrapper {
+.navbar-nav,
+.cart-links-wrapper,
+.init-nav,
+.cart-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav {
+  text-align: center;
 }
 .cart-link {
   float: right;
@@ -72,7 +70,6 @@ li:hover {
 }
 .cart-link button {
   color: #fff;
-  font-size: 18px;
   font-weight: 500;
 }
 .cart-link i:hover {
@@ -80,16 +77,10 @@ li:hover {
 }
 .cart-link button:hover {
   color: #f6a53d;
-}ul {
+}
+ul {
   padding: 0;
   margin: 0;
-}
-.navbar-nav {
-  margin-top: 30px;
-  z-index: 10;
-  align-content: center;
-  text-align: center;
-  justify-items: center;
 }
 .navbar-nav ul li {
   list-style: none;
@@ -103,6 +94,53 @@ li:hover {
 }
 .init-nav a:active {
   color: white;
+}
+button.navbar-toggler .hamburger span {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  border-right: 5px;
+  background-color: #fff;
+}
+button.navbar-toggler .hamburger span:nth-child(1) {
+  top: 0;
+  transition: all 0.2s;
+}
+button.navbar-toggler .hamburger span:nth-child(2) {
+  top: 8px;
+  transition: all 0.15s;
+}
+button.navbar-toggler .hamburger span:nth-child(3) {
+  top: 8px;
+  transition: all 0.15s;
+}
+button.navbar-toggler .hamburger span:nth-child(4) {
+  top: 16px;
+  transition: all 0.2s;
+}
+button.navbar-toggler.collapsed .hamburger span:nth-child(1) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all .2s;
+}
+button.navbar-toggler.collapsed .hamburger span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all .25s;
+}
+button.navbar-toggler.collapsed .hamburger span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: all .25s;
+}
+button.navbar-toggler.collapsed .hamburger span:nth-child(4) {
+  top: 8px;
+  width: 0;
+  opacity: 0;
+  right: 50%;
+  transition: all .2s;
 }
 
 /*--------------------------------------------------------------
