@@ -16,6 +16,8 @@
 body {
   font-family: "Poiret One", cursive;
   font-weight: bolder;
+  background-color: #fafafa !important;
+
 }
 
 /*--------------------------------------------------------------
@@ -230,10 +232,19 @@ ul {
 .drink-item {
   padding: 30px 30px 50px;
   margin: 10px;
-  width: 250px;
+  max-width: 20em;
   transition: ease-in 0.2s;
   border-radius: 27px;
 }
+.drink-name p {
+  font-weight: 800;
+  font-size: 24px;
+  color: #636363;
+}
+.drink-item span p {
+  text-align: center;
+}
+
 .drink-item:hover {
   transition: ease-in 0.3s;
   border-radius: 47px;
@@ -252,31 +263,19 @@ ul {
 }
 #GreenTeaHome {
   position: relative;
-  height: 327px;
-  width: 203px;
+  max-width: 100%;
+}
+#GreenTeaHomeXL {
+  transition: 200ms;
 }
 
-.blanket {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(5px);
-  z-index: inherit;
-}
-.drink-window {
-  display: none;
-  z-index: 777;
-}
 .selected-drink {
+  display: none;
   width: 1000px;
-  padding: 50px;
+  padding: 10px;
   background-color: #ffffff;
   border-radius: 50px;
   box-shadow: 20px 20px 50px #d9d9d9, -20px -20px 50px #ffffff;
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -287,8 +286,19 @@ ul {
   max-width: 100%;
   max-height: 75vh;
 }
+.image-modal.clicked {
+  display: flex;
+  
+}
+.image-modal.clicked img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 75vh;
+  float: left;
+}
 .text-modal {
-  padding: 30px 30px;
+  padding: 30px;
+  margin-left: 80px;
 }
 .side-menu {
   align-items: center;
@@ -297,12 +307,21 @@ ul {
   text-align: center;
   margin-bottom: 50px;
 }
+.item-title-wrapper h4{
+  font-size: 28px;
+  font-weight: 700;
+ color: #636363;
+}
+
 .size-selection {
   height: 200px;
-  width: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.size-selection p {
+  width: 8em;
 }
 .regular-wrapper {
   position: relative;
@@ -348,8 +367,9 @@ ul {
 .large-wrapper:hover {
   background-position: 500% 100%;
 }
+
 .topping-selection {
-  margin-top: 30px;
+  margin: 30px 0;
   display: flex;
 }
 .topping-selection li {
@@ -358,6 +378,10 @@ ul {
 }
 .topping-item {
   border: #797371 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   height: 50px;
   width: 50px;
 }
@@ -370,6 +394,9 @@ ul {
   width: 20px;
 }
 .price-block {
+  border: 3px solid #636363;
+  border-radius: 15px;
+  padding: 10px 30px;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -487,6 +514,8 @@ ul {
     opacity: 1;
   }
 }
+
+
 
 /*-------------------------contact us---------------*/
 /*---------------------------------------------------*/
