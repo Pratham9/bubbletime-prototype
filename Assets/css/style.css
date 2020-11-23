@@ -18,6 +18,13 @@ body {
   background-color: #fafafa !important;
 }
 
+#eapps-instagram-feed-1 {
+  width: auto !important;
+}
+.eapps-link {
+  width: 0 !important;
+}
+
 /*--------------------------------------------------------------
 # header
 --------------------------------------------------------------*/
@@ -791,26 +798,10 @@ body {
     font-size: 1.1rem;
   }
 }
-.modal-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal-title {
-  width: auto;
-}
 .close {
-  /* position: absolute;
-  padding: 20px 40px 40px 20px;
-  width: auto;
-  top: 0;
-  right: 0; */
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 20px;
-  width: 20px;
-}
+  width: 30px;
+padding: 0 !important;}
+
 
 .form-row-name,
 .form-row-subject,
