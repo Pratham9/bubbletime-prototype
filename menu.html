@@ -44,6 +44,26 @@
       crossorigin="anonymous"
     ></script>
 
+    <script type="text/javascript">
+      // place your images in this array
+      var random_images_array = [
+        "butterfly.png",
+        "butterflydotted.png",
+        "hamster.png",
+        "corgi.png",
+        "jelly.png",
+      ];
+
+      function getRandomImage(imgAr, path) {
+        path = path || "Assets/success/"; // default path here
+        var num = Math.floor(Math.random() * imgAr.length);
+        var img = imgAr[num];
+        var imgStr = '<img src="' + path + img + '" alt = "">';
+        document.write(imgStr);
+        document.close();
+      }
+    </script>
+
     <title>Bubble Time Tea & Waffles</title>
   </head>
 
@@ -661,6 +681,42 @@
       </div>
     </section>
   </body>
+  <!-- Random Image Success Modal -->
+  <div
+    class="modal fade"
+    id="successModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="successModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Congratulation</h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          You have success completed the assigned task.
+          <p>
+            Capture a screenshot and send it at <em>goyalp09@outlook.com</em>
+          </p>
+          <a href="."
+            ><script type="text/javascript">
+              getRandomImage(random_images_array);
+            </script></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
 <script>
   const cartButtons = document.querySelectorAll(".cart-button");
@@ -722,5 +778,11 @@
   $(".close-modal-wrapper").click(function () {
     window.location.reload();
   });
-</script>
+  $(".cart-button").click(function () {
+    setTimeout(showRandomSuccess, 2000);
+  });
 
+  function showRandomSuccess() {
+    $("#successModal").modal("show");
+  }
+</script>
