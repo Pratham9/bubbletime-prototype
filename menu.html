@@ -689,6 +689,7 @@
     role="dialog"
     aria-labelledby="successModalLabel"
     aria-hidden="true"
+    style="z-index: 1051;"
   >
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -717,6 +718,96 @@
       </div>
     </div>
   </div>
+
+  <!-- testing new menu modal -->
+
+<!-- Button trigger modal -->
+<button
+type="button"
+class="btn btn-primary"
+data-toggle="modal"
+data-target="#exampleModal"
+>
+Launch demo modal
+</button>
+
+<!-- Modal -->
+<div
+class="modal fade"
+id="exampleModal"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-title item-title-wrapper">
+        <h4>Green Tea</h4>
+      </div>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <div class="image-modal" style="filter: blur(5px);">
+          <img
+            id="GreenTeaHomeXL"
+            src="Assets\Images\drinkImg (1).png"
+            alt="GreenTeaHome"
+          />
+        </div>
+        <div class="text-modal" style="z-index: 2; position: absolute; top: 0; left: 0;">
+          <div class="side-menu">
+            <div class="description-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <br />
+            </div>
+            <div class="size-selection">
+              <div class="regular-wrapper">
+                <div class="wave-flow"><span>Regular</span></div>
+              </div>
+              <div class="large-wrapper">
+                <div class="wave-flow"></div>
+                <span>Large</span>
+              </div>
+              <p>+ $1.3</p>
+            </div>
+            <div class="topping-selection">
+              <li><div class="topping-item">A</div></li>
+              <li><div class="topping-item">B</div></li>
+              <li><div class="topping-item">C</div></li>
+              <li><div class="topping-item">D</div></li>
+            </div>
+            <br />
+            <div class="price-block" style="display: flex">
+              <h3>$3</h3>
+              <button class="cart-button">
+                <span class="add-to-cart">Add to cart</span>
+                <span class="added">Added</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="far fa-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      
+      
+    </div>
+  </div>
+</div>
+</div>
+
 </html>
 <script>
   const cartButtons = document.querySelectorAll(".cart-button");

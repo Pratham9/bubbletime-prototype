@@ -326,19 +326,6 @@ button.navbar-toggler.collapsed .hamburger span:nth-child(4) {
     ". . ."
     ". . .";
 }
-@media only screen and (max-width: 767px) {
-  .drinks-type-section{display: none;}
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 30px 30px;
-    grid-template-areas:
-      " . "
-      " . "
-      " . ";
-  }
-}
 .overlay-cart {
   position: absolute;
   bottom: 100%;
@@ -386,7 +373,6 @@ button.navbar-toggler.collapsed .hamburger span:nth-child(4) {
   vertical-align: middle;
   max-width: 100%;
   max-height: 75vh;
-  float: left;
 }
 .text-modal {
   padding: 30px;
@@ -434,11 +420,11 @@ button.navbar-toggler.collapsed .hamburger span:nth-child(4) {
   background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-orange.png?1443460871);
   background-repeat: repeat-x;
   background-position: 0 -150%;
-  transition: 1.5s ease;
+  transition: 2s ease;
 
   @for $i from 1 through 18 {
     &:nth-child(#{$i}) {
-      filter: hue-rotate(($i * 10) + deg);
+      filter: hue-rotate(($i * 5) + deg);
     }
   }
 }
@@ -447,7 +433,7 @@ button.navbar-toggler.collapsed .hamburger span:nth-child(4) {
   background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-orange.png?1443460871);
   background-repeat: repeat-x;
   background-position: 0 -300%;
-  transition: 1.5s ease;
+  transition: 2.5s ease;
 
   @for $i from 1 through 18 {
     &:nth-child(#{$i}) {
@@ -607,6 +593,32 @@ button.navbar-toggler.collapsed .hamburger span:nth-child(4) {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .drinks-type-section{display: none;}
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      " . "
+      " . "
+      " . ";
+  }
+  .image-modal.clicked img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  .text-modal {
+    padding: 2em;
+    margin: 0;
+  }
+  .regular-wrapper:hover,
+.large-wrapper:hover {
+  background-position: 250% 100%;
+}
+}
+
 /*-------------------------contact us---------------*/
 /*---------------------------------------------------*/
 .box1 img,
@@ -687,7 +699,6 @@ body {
   position: absolute;
 }
 .box1 {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 .box1:after,
